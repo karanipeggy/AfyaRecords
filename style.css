@@ -188,4 +188,28 @@ footer {
     flex: 1;
     padding: 0px 20px;
   }
+  table {
+    
+  }
+  table, th, td {
+    text-align: left;
+    border-collapse: collapse;
+    width: 40%;
+    border: 1px solid  aqua;
+    
+    margin-left: 200px;
+    margin-right: 60px;
+  }
+  th, td {
+    padding: 12px;
+  }
+  tr:hover{
+    background-color: burlywood;
+  }
+  .display {
+    background-color: gray;
+    border-radius: 10%;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+  }
 

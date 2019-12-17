@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +9,7 @@
 </head>
 
 <body>
-  <form>
+  <form method="POST" id="myForm">
     <div class="form-container">
       <div class="column">
         <label for="placeType">What Kind of Place are you listing?</label>
@@ -49,11 +48,11 @@
           <option value="4">4</option>
           <option value="6">6</option>
         </select>
-        <label for="Area">Name your place</label>
-        <input type="text" id=" Area" name="Area">
+        <label for="area">Name your place</label>
+        <input type="text" id="area" name="area">
 
-        <label for="Describe">Describe your place to Guests</label>
-        <textarea name="Describe" id="Describe" rows="4"></textarea>
+        <label for="description">Describe your place to Guests</label>
+        <textarea name="description" id="description" rows="4"></textarea>
         <label for="rules">Describe your House rules</label>
         <textarea name="rules" id="rules" rows="4"></textarea>
 
@@ -62,14 +61,14 @@
         <label for="photos">Add Photos to your listing</label>
         <div class="file-container">
           <div class="file-column">
-            <input type="file" name="photos" id="photos" placeholder="choose file">
-            <input type="file" name="photos" id="photos" placeholder="choose file">
-            <input type="file" name="photos" id="photos" placeholder="choose file">
+            <input type="file" name="photosone" id="photosone" placeholder="choose file">
+            <input type="file" name="photostwo" id="photostwo" placeholder="choose file">
+            <input type="file" name="photosthree" id="photosthree" placeholder="choose file">
           </div>
           <div class="file-column">
-            <input type="file" name="photos" id="photos" placeholder="choose file">
-            <input type="file" name="photos" id="photos" placeholder="choose file">
-            <input type="file" name="photos" id="photos" placeholder="choose file">
+            <input type="file" name="photosfour" id="photosfour" placeholder="choose file">
+            <input type="file" name="photosfive" id="photosfive" placeholder="choose file">
+            <input type="file" name="photossix" id="photossix" placeholder="choose file">
           </div>
         </div>
         <label for="location">Where is Your place located</label>
@@ -81,15 +80,15 @@
           <option value="Tanzania">Tanzania</option>
         </select><br>
         <label for="Address">Street Address</label>
-        <input type="text" id="Address" name="Address">
+        <input type="text" id="address" name="address">
         <label for="App">App.Suit (Optional)</label>
-        <input type="text" id="App" name="App">
+        <input type="text" id="app" name="app">
         <label for="City">City</label>
-        <input type="text" id="City" name="City">
+        <input type="text" id="city" name="city">
         <label for="State">State</label>
-        <input type="text" id="State" name="State">
-        <label for="photos">Add your photos </label>
-        <input type="file" name="photos" id="photos" placeholder="choose file">
+        <input type="text" id="state" name="state">
+        <label for="photoslabel">Add your photos </label>
+        <input type="file" name="photoslabel" id="photosLabel" placeholder="choose file">
         <label for="Phonenumber">Add your phone number</label>
         <input type="text" id="Phonenumber" name="Phonenumber">
         <button onclick="onSubmitForm()" class="submit" type="button"><b>Submit</b>
@@ -97,6 +96,56 @@
       </div>
     </div>
   </form>
+  <table class="display">
+    <tr>
+      <th>placeType</th>
+      <td id="id_place_type_display">bungalo</td>
+    </tr>
+    <tr>
+      <th>place</th>
+      <td id="id_place_display">10</td>
+    </tr>
+    <tr>
+      <th>quantity</th>
+      <td id="id_quantity_display">10</td>
+    </tr>
+    <tr>
+      <th>numberbeds</th>
+      <td id="id_number_beds_display">&lt;10</td>
+    </tr>
+    <tr>
+      <th>area</th>
+      <td id="id_area_display">Caren</td>
+    </tr>
+    <tr>
+      <th>description</th>
+      <td id="id_description_display"> 18 years and above</td>
+    </tr>
+    <tr>
+      <th>rules</th>
+      <td id="id_rules_display">Maintain silence</td>
+    </tr>
+    <tr>
+      <th>country</th>
+      <td id="id_country_display">Kenya</td>
+    </tr>
+    <tr>
+      <th>address</th>
+      <td id="id_address_display">P.O BOX 700 Mumias</td>
+    </tr>
+    <tr>
+      <th>app</th>
+      <td id="id_app_display">Dream</td>
+    </tr>
+    <tr>
+      <th>city</th>
+      <td id="id_city_display">Nairobi</td>
+    </tr>
+    <tr>
+      <th>state</th>
+      <td id="id_state_display">Washington</td>
+    </tr>
+  </table>
   <script src="./script.js"></script>
 </body>
 
